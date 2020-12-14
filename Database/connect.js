@@ -4,14 +4,30 @@ let mysql = require('mysql');
 
 //con holds the information to connect to the database
 let con = mysql.createConnection({
+
+	/*
+	CREATE TABLE `CovidCsv` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `cases_id` varchar(2) NOT NULL,
+  `dates` varchar(25) NOT NULL,
+  `cases` varchar(50) NOT NULL,
+  `death` varchar(50) NOT NULL,
+  `name_fr` varchar(50) NOT NULL,
+  `name_en` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+)
+
+	*/
+
 	//database host username
 	host: 'localhost',
 	//database username
 	user: 'root',
 	//database password
-	password: 'Iphone7s',
+	password: '',//Enter your database password
 	//name of database
 	database: 'CsvData'
+
 });
 
 //connection to  the database
